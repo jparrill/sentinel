@@ -1,0 +1,12 @@
+[Unit]
+Description=Sentinel API
+After=network.target
+
+[Service]
+User=jparrill
+Group=jparrill
+Type=simple
+ExecStart=/usr/bin/python3 /home/jparrill/projects/luxafor/sentinel/sentinel.py
+
+[Install]
+WantedBy=multi-user.target
